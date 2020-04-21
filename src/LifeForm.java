@@ -42,7 +42,7 @@ public abstract class LifeForm {
 	}
 	
 	// to be alive you have to be able to reproduce....
-	public abstract void reproduce();
+	//public abstract void reproduce();
 	
 	public boolean isDead(){
 		return !alive;
@@ -107,6 +107,36 @@ public abstract class LifeForm {
 			}
 		}
 	}
+	/*	public void checkSurroundingBoxes() {
+		int totalNumAdjCreatures=0;
+		for (int i =0; i<creatureList.size();i++) {
+			for (int j=1; j<creatureList.size();j++) {
+				if ((creatureList.get(j).myLocation.getX() ==creatureList.get(i).myLocation.getX()+10) 
+						&& (creatureList.get(j).myLocation.getY() ==creatureList.get(i).myLocation.getY()+10)
+						&& (creatureList.get(j).getMyColor()==RED)){
+					totalNumAdjCreatures++;
+					
+				}else if  ((creatureList.get(j).myLocation.getX() ==creatureList.get(i).myLocation.getX()-10) 
+						&& (creatureList.get(j).myLocation.getY() ==creatureList.get(i).myLocation.getY()+10)) {
+					totalNumAdjCreatures++;
+				}else if ((creatureList.get(j).myLocation.getX() ==creatureList.get(i).myLocation.getX()+10)
+						&&(creatureList.get(j).myLocation.getY() ==creatureList.get(i).myLocation.getY()-10)){
+					totalNumAdjCreatures++;
+				}else if((creatureList.get(j).myLocation.getX() ==creatureList.get(i).myLocation.getX()-10) 
+						&& (creatureList.get(j).myLocation.getY() ==creatureList.get(i).myLocation.getY()-10)) {
+					totalNumAdjCreatures++;
+								
+				}
+				if (totalNumAdjCreatures<=2) {
+					creatureList.remove(i);
+					creatureList.add(i,)
+				}
+			}
+		
+		}
+		
+			
+	}*/
 	
 	private RandomGenerator rgen = RandomGenerator.getInstance();
 	

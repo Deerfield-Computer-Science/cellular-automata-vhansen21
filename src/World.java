@@ -15,20 +15,20 @@ public class World {
 	
 	public void letTimePass(){
 		
-		makeNewCreatures();
+//		makeNewCreatures();
 		//eatThings();
 		//creaturesGetOlder();
 		//purgeTheDead();		
 	}
 	
-	public void makeNewCreatures() {
+	/*public void makeNewCreatures() {
 		
 		int currentSizeOfCreatureList = creatureList.size();
 		System.out.println("size of list is "+currentSizeOfCreatureList);
 		for(int i=0; i< currentSizeOfCreatureList; i++) {
 			creatureList.get(i).reproduce();
 		}
-	}
+	}*/
 	
 	public void purgeTheDead(){
 		int i=0;

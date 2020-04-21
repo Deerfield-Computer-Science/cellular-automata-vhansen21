@@ -27,7 +27,7 @@ public class WorldController extends GraphicsProgram {
 		theWorld.getCreatureList().add( new Symptomatic( new Location(30,40), theWorld ));
 		theWorld.getCreatureList().add(new Asymptomatic(new Location(20,30), theWorld));
 		theWorld.getCreatureList().add(new Asymptomatic(new Location(10,20), theWorld));
-
+		theWorld.getCreatureList().add(new Person(new Location(10,10),theWorld));
 		theWorldCanvas = this.getGCanvas();
 	}
 	
